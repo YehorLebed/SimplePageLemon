@@ -130,7 +130,25 @@ body {
 p{
   margin: 0 0 10px;
 }
+  /* Если название содержит подстроку "title" */
+.section-blue [class^="title"] {
+  color: #fff;
+}
 
+
+input[type="email"], 
+input[type="text"],
+textarea {
+  background: #fff;
+  /* Если хочешь обводку  */
+  border: none;
+  dislay: inline-block;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+}
 /* #--- Custom styles ---# */
 
 .header h1 {
@@ -263,10 +281,11 @@ p{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -20px;
 }
 
 .review-list li {
-  padding: 0 0 24px 0;
+  padding: 0 20px 24px;
   width: 48%;
 }
 
@@ -364,17 +383,85 @@ p{
   font-size: 14px;
 }
 
-.card .button {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  color: #445162;
+.card .link-wrap {
   padding: 0 18px;
 }
 
-.card .button a {
-  display: block;
-  padding: 10px 0;
-  background: #fff;
-  border-radius: 5px;
+.card .button {
+  width: 100%;
 }
+
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contact-form {
+  max-width: 500px;
+  flex-grow: 1;
+  margin-right: 45px;
+}
+
+.contact-form .form-field{
+  margin: 0 0 20px;
+}
+
+.contact-form textarea {
+  height: 170px;
+  resize: none;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button {
+  width: auto;
+  background: #fff;
+  min-height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  cursor: pointer;
+  /* FIX IT */
+  border: 2px solid #fff;
+  color: #445162;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #445162;
+  color: #fff;
+}
+
+input[type="email"]:focus, 
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: inset 0 0 8px 1px rgba(68, 81, 98, 0.7);
+}
+
+.contact-list li {
+  margin: 0 0 18px;
+}
+.contact-list li a {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.contact-list li img{
+  max-width: 26px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
