@@ -142,7 +142,7 @@ textarea {
   background: #fff;
   /* Если хочешь обводку  */
   border: none;
-  dislay: inline-block;
+  display: inline-block;
   width: 100%;
   height: 40px;
   border-radius: 4px;
