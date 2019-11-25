@@ -5,19 +5,123 @@
         -ms-flex-direction: column;
         flex-direction: column;
     }
+    
     .header .col,
     .header .col-50 {
         padding: 0;
     }
+
     .header .col-50 {
         width: 100%;
         max-width: 470px;
         margin: 0 auto;
     }
+    
     .product-image-wrapper {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .colum-wrapper {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .about-image-wrapper img {
+        max-height: 250px;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 920px) {
+    .descr-list li {
+        width: 100%;
+    }
+
+    .descr-img {
+        max-width: 150px;
+    }
+
+    .card-wrapper {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0 22px 20px;
+    }
+
+    .card:last-child {
+        padding-bottom: 0;
+    }
+
+    .card-inner {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+ }
+
+@media (max-width: 720px) {
+
+    .colum-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .col-60, 
+    .col-40.about-image-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-image-wrapper {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .review-list li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .plus-list li {
+        width: 100%;
+    }
+
+    .descr-list li {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 15px 0;
+    }
+
+    .descr-text [class^="title"] {
+        text-align: center;
+    }
+
+    .card span {
+        font-size: 32px;
+        padding: 6px 0;
+    }
+
+    .contact-form {
+        margin: 0 0 30px 0;
+    }
+
+    .contacts-wrapper {
+        width: 500px;
     }
 }
 
@@ -25,6 +129,11 @@
     .section {
         padding: 25px 0;
     }
+
+    .title24 {
+        font-size: 20px;    
+    }
+
     .header h1 {
         font-size: 42px;
         margin-bottom: 16px;
@@ -43,5 +152,19 @@
     .product-image-wrapper img {
         max-width: 400px;
         width: 100%;
+    }
+
+    .descr-list li {
+        text-align: center;
+    }
+
+    .review-img {
+        min-width: 50px;
+        min-height: 50px;
+        padding-top: 12px;
+    }
+    
+    .footer-bottom {
+        padding: 10px 0;
     }
 }

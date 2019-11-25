@@ -220,8 +220,7 @@ textarea {
 
 .plus-list li {
     position: relative;
-    padding: 15px 0 5px;
-    padding-left: 42px;
+    padding: 15px 10px 5px 42px;
     width: 50%;
 }
 
@@ -294,7 +293,6 @@ textarea {
 
 .review-list li {
     padding: 0 20px 24px;
-    width: 48%;
 }
 
 .review-img {
@@ -360,13 +358,14 @@ textarea {
 }
 
 .card {
+    width: 33%;
     color: #fff;
     text-align: center;
     padding: 0 22px;
 }
 
 .card-inner {
-    width: 300px;
+    /* width: 300px; */
     background: #445162;
     padding: 15px 2px 20px;
     border-radius: 5px;
